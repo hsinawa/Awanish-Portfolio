@@ -20,7 +20,7 @@ app.get("/" , (req,res)=>{
 
 
 
-app.use('/api/booking/' , bookingroute )
+app.use('/api/connect/' , bookingroute )
 app.use('/api/admin' , adminroute )
 
 

@@ -2,6 +2,9 @@ import react from 'react'
 import './test.css'
 const Testimonials=()=>{
 
+ 
+
+
 
     window.onload = function(){
 
@@ -103,10 +106,7 @@ const Testimonials=()=>{
  
     </div>
 
-    <p style={{fontFamily:'serif' }} id='about-2' >
-What people say about me
-                   
-                </p>
+ 
 
 <br/>
 

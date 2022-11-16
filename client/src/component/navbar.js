@@ -10,12 +10,13 @@ import './component-navbar.css'
 <div>
     
 <img src={logo} id='navbar-logo' onClick={()=>{ window.location.reload() }} style={{cursor:'pointer'}} />
-
+< a href='/connect' id='href' >
 <p id='connect' >
 
 Let's Connect
 
 </p>
+</a>
 
 </div>
 
