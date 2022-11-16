@@ -12,9 +12,9 @@ let dbconnection = require('./auth')
 
 
 
-app.get("/" , (req,res)=>{
-    res.send("Welcome to Awanish Site")
-} )
+// app.get("/" , (req,res)=>{
+//     res.send("Welcome to Awanish Site")
+// } )
 
 
 
@@ -24,9 +24,20 @@ app.use('/api/connect/' , bookingroute )
 app.use('/api/admin' , adminroute )
 
 
+if(process.env.NODE_ENV==='production')
 
-const port =  3333 ;
+{
+    app.use('/' , express.static('client/build') )
+    app.get('*' , (req,res)=>{
+        res.sendFile(path.resolve(__dirname , 'client/build/index.html'))
+    } )
+}
 
- app.listen( port , ()=>{
-    console.log('Server started of Awanish Site')
+
+
+
+const port = process.env.PORT ||  3333 ;
+
+var server = app.listen( port , ()=>{
+    console.log('Awanish Mishra Welcomes You')
 } )
