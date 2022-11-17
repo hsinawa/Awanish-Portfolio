@@ -1,0 +1,206 @@
+#main-content
+{
+    margin-top: 10%;
+}
+
+#heading
+{
+    font-size: 50px;
+}
+
+#heading-2
+{
+    font-size: 25px;
+}
+
+#about
+{
+    padding: 2%;
+    font-size: 35px;
+}
+
+#about-2
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+#black-logo
+{
+    width: 10%;
+    padding-top: 2%;
+}
+
+.three-grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+#circle-border
+{
+    border: 0.5px solid white;
+    padding:3%;
+    border-radius: 50%;
+    font-size: 35px;
+
+}
+
+#circle-border:hover
+{
+    
+   
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+
+}
+
+@media screen and (max-width:900px) {
+    #heading
+{
+    font-size: 45px;
+}
+
+#heading-2
+{
+    font-size: 22px;
+}
+
+
+#about
+{
+    padding: 2%;
+    font-size: 30px;
+}
+
+#about-2
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+
+
+#black-logo
+{
+    width: 15%;
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    #main-content
+    {
+        margin-top: 15%;
+    }
+        
+        #heading
+        {
+            font-size: 25px;
+        }
+    
+        #heading-2
+    {
+        font-size: 12px;
+    }
+    
+    #logo
+    {
+        width: 70%;
+    }
+
+    #about
+{
+    padding: 2%;
+    font-size: 27px;
+}
+
+#about-2
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 16px;
+}
+
+
+#circle-border
+{
+    border: 0.5px solid white;
+    padding:10%;
+    border-radius: 50%;
+    font-size: 25px;
+
+}
+
+    
+}
+
+
+
+
+
+@media screen and (max-width:450px) {
+
+    #main-content
+{
+    margin-top: 19%;
+}
+    
+    #heading
+    {
+        font-size: 15px;
+    }
+
+    #heading-2
+{
+    font-size: 12px;
+}
+
+#logo
+{
+    width: 70%;
+}
+
+#about
+{
+    padding: 2%;
+    font-size: 20px;
+}
+
+#about-2
+{
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 12px;
+}
+
+}
+
+
+
+@media screen and (max-width:350px) {
+
+    #about
+{
+    padding: 2%;
+    font-size: 18px;
+}
+
+#about-2
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 12px;
+}
+    
+}
