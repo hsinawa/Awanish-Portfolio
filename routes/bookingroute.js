@@ -45,17 +45,17 @@ router.post('/connection', (req, res) => {
             if (!err) {
 
                 if (req.body.contactnumber?.length == 10) {
-                    client.messages
-                        .create({
-                            body: `Dear ${req.body.name} ,
-Thanks for connecting with me . I've received your message and will connect with you very soon.
-Regards ,
-Awanish Mishra `,
-                            from: '+15087196743',
-                            to: `+91${req.body.contactnumber}`
-                        })
-                        .then(message => console.log('Message sent', message.sid))
-                        .done();
+//                     client.messages
+//                         .create({
+//                             body: `Dear ${req.body.name} ,
+// Thanks for connecting with me . I've received your message and will connect with you very soon.
+// Regards ,
+// Awanish Mishra `,
+//                             from: '+15087196743',
+//                             to: `+91${req.body.contactnumber}`
+//                         })
+//                         .then(message => console.log('Message sent', message.sid))
+//                         .done();
 
 
 const msg = {
@@ -85,6 +85,43 @@ nodemailer.createTransport({
         console.log('Email sent')
     }
 } )
+
+
+
+//msg2
+
+const msg2 = {
+    from :'awanishsampleprojects@gmail.com' ,
+    to:`mawanish03@gmail.com` ,
+    subject:`Message from ${req.body.name}` ,
+    text:`Dear ${req.body.name} ,
+Thanks for connecting with me . I've received your message and will connect with you soon.
+Regards ,
+Awanish Mishra `
+};
+
+nodemailer.createTransport({
+    service:'gmail' ,
+    auth:{
+        user:`awanishsampleprojects@gmail.com` ,
+        pass:'zbwxvkpfjigjxant' 
+
+    } ,
+    port:465,
+    host:`smtp.gmail.com`
+}).sendMail(msg2 , (err)=>{
+    if(err)
+    {
+        console.log('Error is 2' , err )
+    }
+    else
+    {
+        console.log('Email sent 2')
+    }
+} )
+
+
+
 
 
                 }
