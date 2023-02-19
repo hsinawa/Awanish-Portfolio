@@ -5,7 +5,8 @@ import am from '../Images/am.png'
 import './connect.css'
 import TextField from '@material-ui/core/TextField'
 import { ConnectAction } from "../actions/messageaction";
-
+import  Loader2  from "./loader";
+import {ConnectReducer} from '../reducers/connectreducer'
 
 
 
@@ -16,6 +17,9 @@ const ConnectionForm=()=>{
    
     const [message, setmessage] = useState("");
     const [contactnumber, setcontactnumber] = useState();
+
+    const getloading = useSelector(state=>state.ConnectReducer)
+    const {connectProcess} = getloading
 
     const sendmessage=(e)=>{
         e.preventDefault();
@@ -53,6 +57,7 @@ const ConnectionForm=()=>{
 
     return(
         <div>
+            
             <p  style={{ textAlign:'center' }} >
             <h3 style={{fontFamily:'sans-serif' }}  id='heading-2' >
                    Thanks for taking time to reach out.
@@ -62,7 +67,7 @@ const ConnectionForm=()=>{
                 <img src={am} id='logo'  />
                 </a>
                 <h3 style={{fontFamily:'sans-serif' }}  id='heading-2' >
-                  How can I help you?
+                  How can I help you? 
                 </h3>
 
             </p>
@@ -122,7 +127,12 @@ onChange={(e)=>{ setcontactnumber(e.target.value) }}
 size='large'
 style={{color:'white' , backgroundColor:'black' }}
 type='submit'
->Submit</Button>
+>
+  {
+      connectProcess?(<p><Loader2/></p>): ( <p> Submit</p> ) 
+  }  
+
+</Button>
 </p> 
                 </form>
 

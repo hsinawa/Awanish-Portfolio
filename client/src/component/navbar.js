@@ -10,7 +10,7 @@ import './component-navbar.css'
 <div>
     
 <img src={logo} id='navbar-logo' onClick={()=>{ window.location.reload() }} style={{cursor:'pointer'}} />
-< a href='/connect' id='href' >
+< a href='/connect' id='href' alt='Icon' >
 <p id='connect' >
 
 Let's Connect

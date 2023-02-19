@@ -71,7 +71,7 @@ const Ending=()=>{
 
                 <br/>
                 <p style={{fontFamily:'monospace' }} id='heading-2' >
-                    handcrafted by me@November2022
+                    handcrafted by me@February 2023
                 </p>
                 <br/><br/>
             </div>
