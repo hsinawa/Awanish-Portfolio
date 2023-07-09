@@ -94,11 +94,10 @@ const ConnectionForm=()=>{
 
 required id="standard-required"
 
-id="outlined-basic" label="Contact" variant="outlined" style={{width:'100%'}}
+id="outlined-basic" label="Email" variant="outlined" style={{width:'100%'}}
 
 
 
-type='number'
 
 value={contactnumber}
 

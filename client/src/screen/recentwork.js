@@ -40,9 +40,9 @@ const RecentWork=()=>{
     const RivaHomes=()=>{
         return(
             <div>
-             A firm reputed for building high quality residential development.
+             A firm reputed for giving best medical test results.
               <br/>           <br/>
-              <a href='https://rivahomes.co.uk/' className='visit-site' 
+              <a href='https://wellbelabs.in/' className='visit-site' 
               
               target='_blank'
 

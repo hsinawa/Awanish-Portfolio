@@ -29,7 +29,7 @@ const ConnectionSuccess=()=>{
                 </p>
 
                 <p style={{fontFamily:'cursive' , color:'#012649' }} id='heading-2' >
-                    I've sent you an SMS as well on {message.contactnumber}
+                    I've sent you an email as well on {message.contactnumber}
                 </p>
 
         </div>
