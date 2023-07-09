@@ -6,7 +6,7 @@ const fs = require('fs')
 require('dotenv').config()
 
 const mongoose = require('mongoose')
-var mongodburl = process.env.MongodbURL
+var mongodburl = 'mongodb+srv://awanishmishra3:awanishmishra3@cluster0.wxurcw4.mongodb.net/awanish'
 
 mongoose.connect(mongodburl , { useUnifiedTopology:true , useNewUrlParser:true })
 

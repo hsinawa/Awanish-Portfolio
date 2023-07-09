@@ -12,7 +12,7 @@ const BookingSchema = mongoose.Schema({
         require
     } ,
     contactnumber:{
-        type:Number ,
+        type:String ,
         require
     }
 
